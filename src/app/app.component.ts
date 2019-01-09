@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cookBook';
+  recipesClicked = true;
+  onNavigate(event: boolean) {
+    this.recipesClicked = event;
+  }
 }
